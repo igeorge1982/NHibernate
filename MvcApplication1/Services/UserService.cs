@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using MvcApplication1.Models.Daos;
 using MvcApplication1.Models.Entities;
 using MvcApplication1.Transactions;
 
 namespace MvcApplication1.Services
 {
-    /// <summary>Data Access Object class that represents the following entity class: <see cref="User"/></summary>
+    /// <summary>Data Access Object class that represents the following entity class: <see cref="User" /></summary>
     public class UserService
     {
         public IUserDao UserDao { private get; set; }

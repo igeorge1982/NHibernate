@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Http;
+using log4net.Config;
 
 namespace MvcApplication1
 {
@@ -12,7 +13,7 @@ namespace MvcApplication1
         {
             // Web Api 1
             // WebApiConfig.Register(GlobalConfiguration.Configuration);
-
+            XmlConfigurator.Configure();
             // Web Api 2
             GlobalConfiguration.Configure(WebApiConfig.Register);
             WebApiFilterConfig.RegisterGlobalFilters(GlobalConfiguration.Configuration.Filters);

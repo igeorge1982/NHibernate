@@ -22,6 +22,7 @@ namespace MvcApplication1.Controllers
         }
 
         [Route("books/{id}")]
+        [HttpGet]
         public User GetUserById(int id)
         {
             var user = UserService.GetUser(id);
@@ -32,8 +33,19 @@ namespace MvcApplication1.Controllers
             return user;
         }
 
-        [Route("newbooks/{user}")]
+        [Route("newbook/{id}/{username}")]
         [HttpPost]
+        public User NewUser(int id, string username)
+        {
+            var user = new User {Id = id, Username = username};
+            if (user == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+            return user;
+        }
+
+        // This seems to be use the POST response
         public HttpResponseMessage PostUser(User user)
         {
             UserService.Save(user);
@@ -58,6 +70,9 @@ namespace MvcApplication1.Controllers
             return response;
         }
 
+        [Route("delete/{id}")]
+        [AcceptVerbs("DELETE")]
+        [HttpDelete]
         public void DeleteUser(int id)
         {
             var user = UserService.GetUser(id);

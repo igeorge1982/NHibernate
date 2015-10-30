@@ -85,3 +85,12 @@ C:\Dev\nhibernate\MvcApplication1\obj\Release\MvcApplication1.dll
 C:\Dev\nhibernate\MvcApplication1\obj\Release\MvcApplication1.pdb
 C:\Dev\nhibernate\MvcApplication1\bin\log4net.dll
 C:\Dev\nhibernate\MvcApplication1\bin\log4net.xml
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.Core.dll
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.dll
+C:\Dev\nhibernate\MvcApplication1\bin\NHibernate.Logging.CommonLogging.dll
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.pdb
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.xml
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.Core.pdb
+C:\Dev\nhibernate\MvcApplication1\bin\Common.Logging.Core.xml
+C:\Dev\nhibernate\MvcApplication1\bin\NHibernate.Logging.CommonLogging.pdb
+C:\Dev\nhibernate\MvcApplication1\bin\NHibernate.Mapping.Attributes.dll
